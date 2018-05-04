@@ -162,3 +162,13 @@ hr {
 #socials a:hover {
     color: #7d7d7d;
 }
+
+#madeBy {
+    position: absolute;
+    bottom: 1em;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    color: #EAEAEA;
+    width: 100%;
+}
