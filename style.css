@@ -14,12 +14,14 @@ body {
     margin-top: 20px;
     max-width: 1100px;
     margin: auto;
+    margin-bottom: 1em;
     font-size: 22px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #EAEAEA;
-    box-shadow: -5px 5px 20px #848484;
+    box-shadow: -15px 15px 15px #848484;
+    position: relative;
 }
 
 a {
@@ -163,4 +165,10 @@ hr {
 
 #socials a:hover {
     color: #7d7d7d;
+}
+
+#contact {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
