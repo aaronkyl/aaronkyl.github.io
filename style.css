@@ -119,15 +119,23 @@ a h4:hover {
 
 .project p {
     font-size: 1em;
-    padding: 2em;
+    padding: 1em 2em;
     margin: 0;
     font-weight: 200;
 }
 
 .project-techs {
     text-align: center;
-    font-size: 2em;
+    font-size: 1.5em;
     letter-spacing: .25em;
+}
+
+#edonor div:first-of-type {
+    max-width: 440px;
+}
+
+#imageSwap {
+    height: 715px;
 }
 
 hr {
