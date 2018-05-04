@@ -1,0 +1,151 @@
+/** {*/
+/*    border: 1px solid red;*/
+/*}*/
+
+html {
+    background-color: #AAAAAA;
+}
+
+body {
+    padding-top: 25px;
+}
+
+#content {
+    margin-top: 20px;
+    max-width: 1100px;
+    margin: auto;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #EAEAEA;
+    box-shadow: -5px 5px 20px #848484;
+}
+
+a {
+    color: #FFCF0B;
+    text-decoration: none;
+}
+
+#profile-pic {
+    border-radius: 20%;
+    max-width: 200px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-family: 'Anonymous Pro', monospace;
+    text-transform: uppercase;
+}
+
+h2, h3, h4, p {
+    font-family: 'Work Sans', sans-serif;
+}
+
+h1 {
+    position: sticky;
+    top: 0;
+    background-color: inherit;
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: .5em;
+    letter-spacing: .1em;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 1em;
+    font-weight: 300;
+    font-size: 1.25em;
+}
+
+#projects {
+    width: 100%;
+}
+
+.projects-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    background-color: #2F0F0B;
+    width: 100%;
+    height: 3em;
+    color: #EAEAEA;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects-header {
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.projects-div {
+    display: none;
+    background-color: #3c3c3c;
+    color: #EAEAEA;
+}
+
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 5%;
+    padding-right: 5%;
+    min-height: 300px;
+}
+
+.app-screenshot {
+    max-width: 500px;
+    margin: 25px;
+    box-shadow: -5px 5px 20px #232323;
+}
+
+h4 {
+    text-align: center;
+    margin: 0;
+    color: #EAEAEA;
+    text-transform: uppercase;
+    letter-spacing: .1em
+}
+
+a h4:hover {
+    color: #FFCF0B;
+}
+
+.project p {
+    font-size: 1em;
+    padding: 2em;
+    margin: 0;
+    font-weight: 200;
+}
+
+.project-techs {
+    text-align: center;
+    font-size: 2em;
+    letter-spacing: .25em;
+}
+
+hr {
+    width: 90%;
+    border:1px solid #AAA;
+}
+
+#socials {
+    padding: 1em
+}
+
+#socials a {
+    color: #3c3c3c;
+    font-size: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#socials a:hover {
+    color: #7d7d7d;
+}
