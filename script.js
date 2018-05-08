@@ -48,6 +48,10 @@ $(document).ready(function() {
         $('#misc').slideToggle('fast')
     });
     
+    
+    // This is not in the CSS file since the img hover affects elements farther back in
+    // the HTML code
+    
     $('#cs50 img, #cs50 h4').hover(
     function() {
         $('#cs50 h4').css('color', '#FFCF0B')
