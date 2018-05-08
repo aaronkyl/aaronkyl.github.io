@@ -6,150 +6,164 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-HX5QvHXoIsrUAY0tE/wG8+Wt1MwvaY28d9Zciqcj6Ob7Tw99tFPo4YUXcZw9l930" crossorigin="anonymous">
         <script src="//code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Work+Sans:200,300,400" rel="stylesheet">    </head>
+        <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro:400,700|Work+Sans:200,300,400" rel="stylesheet">    
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
     <body>
         <div id="content">
-            <!--<div id="contact"><img src="img/contact.svg"></div>-->
-            <img id="profile-pic" src="static/img/aaron.png" alt="Aaron">
-            <h1>Aaron K. Wilkinson</h1>
-            <h2>Software Developer. Cat Lover. Chocoholic.</h2>
-            <div id="projects">
-                <div id="fullstack-header" class="projects-header">
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <h3> Web Applications </h3>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                </div>
-                <div id="fullstack" class="projects-div">
-                    <div id="cs50" class="project">
-                        <div class="img-container">
-                            <a href="https://youtu.be/WSlYoPnvfJI" target="_blank"><img class="app-screenshot" src="static/img/cs50-fitness.png" alt="CS50 Fitness"></a>
+            <div id="card">
+                <div id="card__face-front" class="card__face">
+                    <!--<div id="contact"><img src="img/contact.svg"></div>-->
+                    <img id="profile-pic" src="static/img/aaron.png" alt="Aaron">
+                    <h1>Aaron K. Wilkinson</h1>
+                    <h2>Software Developer. Cat Lover. Chocoholic.</h2>
+                    <div id="projects">
+                        <div id="fullstack-header" class="projects-header">
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <h3> Web Applications </h3>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
                         </div>
-                        <div>
-                            <a href="https://youtu.be/WSlYoPnvfJI" target="_blank"><h4>CS50 Fitness</h4></a>
-                            <p>
-                                App that allows users to enter exercises and use them to 
-                                create routines which can be used to record workouts. Past 
-                                workouts can be reviewed to monitor progress.
-                            </p>
-                            <div class="project-techs">
-                                <i class="fal fa-flask"></i>
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fab fa-python"></i>
-                                <i class="fal fa-database"></i>
+                        <div id="fullstack" class="projects-div">
+                            <div id="cs50" class="project">
+                                <div class="img-container">
+                                    <a href="https://youtu.be/WSlYoPnvfJI" target="_blank"><img class="app-screenshot" src="static/img/cs50-fitness.png" alt="CS50 Fitness"></a>
+                                </div>
+                                <div>
+                                    <a href="https://youtu.be/WSlYoPnvfJI" target="_blank"><h4>CS50 Fitness</h4></a>
+                                    <p>
+                                        App that allows users to enter exercises and use them to 
+                                        create routines which can be used to record workouts. Past 
+                                        workouts can be reviewed to monitor progress.
+                                    </p>
+                                    <div class="project-techs">
+                                        <i class="fal fa-flask"></i>
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-python"></i>
+                                        <i class="fal fa-database"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div id="blackjack" class="project">
+                                <div>
+                                    <a href="http://blackjack.aaronkwilkinson.com" target="_blank"><h4>AKW Blackjack</h4></a>
+                                    <p>
+                                        Blackjack application that dynamically generates decks 
+                                        based on user input. Passion project with roadmap of 
+                                        enhancements.
+                                    </p>
+                                    <div class="project-techs">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="http://blackjack.aaronkwilkinson.com" target="_blank"><img class="app-screenshot" src="static/img/blackjack.png" alt="AKW Blackjack"></a>
+                                </div>
+            
+                            </div>
+                            <hr>
+                            <div id="weather" class="project">
+                                <div>
+                                    <a href="https://akw-weather.herokuapp.com/" target="_blank"><img class="app-screenshot" src="static/img/weather.png" alt="Weather"></a>
+                                </div>
+                                <div>
+                                    <a href="https://akw-weather.herokuapp.com/" target="_blank"><h4>Weather App</h4></a>
+                                    <p>
+                                        Simple application to display weather conditions for 
+                                        a user-entered city. Allows for conversion between Metric 
+                                        and Imperial measurements. Recent location data is cached 
+                                        for quick retrieval. Backgrounds change to match weather 
+                                        temperature and conditions.
+                                    </p>
+                                    <div class="project-techs">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                        <i class="fab fa-python"></i>
+                                        <i class="fal fa-database"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <hr>
-                    <div id="blackjack" class="project">
-                        <div>
-                            <a href="http://blackjack.aaronkwilkinson.com" target="_blank"><h4>AKW Blackjack</h4></a>
-                            <p>
-                                Blackjack application that dynamically generates decks 
-                                based on user input. Passion project with roadmap of 
-                                enhancements.
-                            </p>
-                            <div class="project-techs">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fab fa-js-square"></i>
+                        <div id="frontend-header" class="projects-header">
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <h3>Front End Designs</h3>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
+                        </div>
+                        <div id="frontend" class="projects-div">
+                            <div id="edonor" class="project">
+                                <div>
+                                    <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><h4>MD Anderson's eDonor Page</h4></a>
+                                    <p>
+                                        Updated MD Anderson's Blood Donor Center's eDonor 
+                                        "Donor Centers" page from a non-intuitive listing 
+                                        of sites and hours to a more engaging and seamless 
+                                        user experience including pictures and differing fonts.
+                                    </p>
+                                    <div class="project-techs">
+                                        <i class="fab fa-html5"></i>
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><div id="imageSwap"></div></a>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <a href="http://blackjack.aaronkwilkinson.com" target="_blank"><img class="app-screenshot" src="static/img/blackjack.png" alt="AKW Blackjack"></a>
+                        <div id="misc-header" class="projects-header">
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <h3>Misc</h3>
+                            <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
+                            <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
                         </div>
-    
-                    </div>
-                    <hr>
-                    <div id="weather" class="project">
-                        <div>
-                            <a href="https://akw-weather.herokuapp.com/" target="_blank"><img class="app-screenshot" src="static/img/weather.png" alt="Weather"></a>
-                        </div>
-                        <div>
-                            <a href="https://akw-weather.herokuapp.com/" target="_blank"><h4>Weather App</h4></a>
-                            <p>
-                                Simple application to display weather conditions for 
-                                a user-entered city. Allows for conversion between Metric 
-                                and Imperial measurements. Recent location data is cached 
-                                for quick retrieval. Backgrounds change to match weather 
-                                temperature and conditions.
-                            </p>
-                            <div class="project-techs">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                                <i class="fab fa-python"></i>
-                                <i class="fal fa-database"></i>
+                        <div id="misc" class="projects-div">
+                            <div id="tmp-report" class="project">
+                                <div>
+                                    <img class="app-screenshot" src="static/img/report.png" alt="Report">
+                                </div>
+                                <div>
+                                    <h4>Granulocyte Donors Review Report</h4>
+                                    <p>
+                                        Custom report created to summarize all relevant data 
+                                        from multiple applications for granulocyte prescreen 
+                                        donors. Report used by transfusion medicine pathologists 
+                                        to determine eligibility of potential granulocyte donors.
+                                        PHI redacted.
+                                    </p>
+                                    <div class="project-techs">
+                                        
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="frontend-header" class="projects-header">
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <h3>Front End Designs</h3>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                </div>
-                <div id="frontend" class="projects-div">
-                    <div id="edonor" class="project">
-                        <div>
-                            <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><h4>MD Anderson's eDonor Page</h4></a>
-                            <p>
-                                Updated MD Anderson's Blood Donor Center's eDonor 
-                                "Donor Centers" page from a non-intuitive listing 
-                                of sites and hours to a more engaging and seamless 
-                                user experience including pictures and differing fonts.
-                            </p>
-                            <div class="project-techs">
-                                <i class="fab fa-html5"></i>
-                                <i class="fab fa-css3-alt"></i>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="https://mdandersonbloodbank.org/index.cfm?group=page&pgfunction=fixedsites" target="_blank"><div id="imageSwap"></div></a>
-                        </div>
-                    </div>
-                </div>
-                <div id="misc-header" class="projects-header">
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <h3>Misc</h3>
-                    <span class="up-arrows"><i class="fal fa-angle-double-up"></i></span>
-                    <span class="down-arrows"><i class="fal fa-angle-double-down"></i></span>
-                </div>
-                <div id="misc" class="projects-div">
-                    <div id="tmp-report" class="project">
-                        <div>
-                            <img class="app-screenshot" src="static/img/report.png" alt="Report">
-                        </div>
-                        <div>
-                            <h4>Granulocyte Donors Review Report</h4>
-                            <p>
-                                Custom report created to summarize all relevant data 
-                                from multiple applications for granulocyte prescreen 
-                                donors. Report used by transfusion medicine pathologists 
-                                to determine eligibility of potential granulocyte donors.
-                                PHI redacted.
-                            </p>
-                            <div class="project-techs">
+                            <!--<div id="barcodes" class="project">-->
                                 
-                            </div>
+                            <!--</div>-->
                         </div>
                     </div>
-                    <!--<div id="barcodes" class="project">-->
-                        
-                    <!--</div>-->
+                    <div id="socials">
+                        <a href="https://github.com/aaronkyl" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/aaronkwilkinson/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.codewars.com/users/aaronkyl" target="_blank"><i class="far fa-code"></i></a>
+                    </div>
                 </div>
-            </div>
-            <div id="socials">
-                <a href="https://github.com/aaronkyl" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/aaronkwilkinson/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.codewars.com/users/aaronkyl" target="_blank"><i class="far fa-code"></i></a>
-            </div>
-            <div id="contact">
-                <form></form> 
+                <div id="card__face-back" class="card__face">
+                    <div id="contact">
+                        <form><p>TESTING</p></form> 
+                    </div>
+                </div>
             </div>
         </div>
         <script src="static/script/script.js" type="text/javascript"></script>

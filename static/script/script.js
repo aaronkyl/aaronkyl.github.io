@@ -78,6 +78,9 @@ $(document).ready(function() {
     
     $('#fullstack-header .down-arrows').hide()
     
+    $('#profile-pic, #back p').click(function() {
+        $('#card').toggleClass('is-flipped')
+    });
     
 });
 
