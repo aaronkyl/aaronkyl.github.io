@@ -82,9 +82,9 @@ $(document).ready(function() {
 });
 
 function setAfterImage() {
-      $('#imageSwap').fadeIn(500).html('<img class="app-screenshot" src="img/edonor-after.png" alt="eDonor After"/>').delay(2000).fadeOut(500, function () { setBeforeImage(); });
+      $('#imageSwap').fadeIn(500).html('<img class="app-screenshot" src="static/img/edonor-after.png" alt="eDonor After"/>').delay(2000).fadeOut(500, function () { setBeforeImage(); });
 }
 
 function setBeforeImage() {
-      $('#imageSwap').fadeIn(500).html('<img class="app-screenshot" src="img/edonor-before.png" alt="eDonor Before"/>').delay(2000).fadeOut(500, function () { setAfterImage(); });
+      $('#imageSwap').fadeIn(500).html('<img class="app-screenshot" src="static/img/edonor-before.png" alt="eDonor Before"/>').delay(2000).fadeOut(500, function () { setAfterImage(); });
 }
