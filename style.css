@@ -74,12 +74,12 @@ h2 {
     background-color: #2F0F0B;
     width: 100%;
     height: 3em;
-    color: #EAEAEA;
+    color: #F2F2F2;
     display: block;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #F2F2F2;
 }
 
 .down-arrows, .up-arrows {
@@ -91,7 +91,7 @@ h2 {
 .projects-div {
     display: none;
     background-color: #3c3c3c;
-    color: #EAEAEA;
+    color: #F2F2F2;
 }
 
 .project {
@@ -114,7 +114,7 @@ h2 {
 h4 {
     text-align: center;
     margin: 0;
-    color: #EAEAEA;
+    color: #F2F2F2;
     text-transform: uppercase;
     letter-spacing: .1em
 }
