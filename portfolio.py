@@ -2,12 +2,20 @@ import tornado.web
 import tornado.wsgi
 import tornado.ioloop
 import os
+import boto3
 from jinja2 import \
     Environment, PackageLoader, select_autoescape
 
 ENV = Environment(
     loader=PackageLoader('portfolio', 'templates'),
     autoescape=select_autoescape(['html', 'xml'])
+)
+
+client = boto3.client(
+  'ses',
+  aws_access_key_id=os.environ.get('AWS_ACCESS_KEY'),
+  aws_secret_access_key=os.environ.get('AWS_SECRET_KEY'),
+  region_name='us-east-1'
 )
 
 class TemplateHandler(tornado.web.RequestHandler):
@@ -18,6 +26,26 @@ class TemplateHandler(tornado.web.RequestHandler):
 class MainHandler(TemplateHandler):
     def get(self):
         self.render_template("index.html", {})
+        
+class MailHandler(TemplateHandler):
+    pass
+
+def send_email(sender_name, sender_email, message):
+    client.send_email(
+        Destination={
+            'ToAddresses': ['aaronwilkinson@gmail.com'],
+        },
+        Message={
+            'Body': {
+                'Text': {
+                    'Charset': 'UTF-8',
+                    'Data': "Name: {} \n\n Email: {} \n\n Message: {}".format(sender_name, sender_email, message),
+                },
+            },
+            'Subject': {'Charset': 'UTF-8', 'Data': 'Portfolio Contact Message'},
+        },
+        Source='aaronwilkinson@gmail.com',
+    )
 
 def webApp():
     return tornado.web.Application([
