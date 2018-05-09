@@ -28,7 +28,11 @@ class MainHandler(TemplateHandler):
         self.render_template("index.html", {})
         
 class MailHandler(TemplateHandler):
-    pass
+    def post(self):
+        name = self.get_argument("name")
+        email = self.get_argument("email")
+        message = self.get_argument("message")
+        send_email(name, email, message)
 
 def send_email(sender_name, sender_email, message):
     client.send_email(
@@ -50,6 +54,7 @@ def send_email(sender_name, sender_email, message):
 def webApp():
     return tornado.web.Application([
         (r"/", MainHandler),
+        (r"/contact", MailHandler),
         (r"/static/(.*)", 
             tornado.web.StaticFileHandler, {'path': 'static'}),
         ], autoreload=True)
