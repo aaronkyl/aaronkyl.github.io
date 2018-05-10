@@ -298,3 +298,7 @@ form button {
 form button:hover {
     color: #7d7d7d;
 }
+
+input:focus, textarea:focus, button:focus {
+    outline: none;
+}
