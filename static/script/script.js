@@ -89,6 +89,9 @@ $(document).ready(function() {
     
     $('#contact, .fa-times').click(function() {
         $('#card').toggleClass('is-flipped');
+        $('#fullstack').hide('fast');
+        $('#frontend').hide('fast');
+        $('#misc').hide('fast');
         // change h1's z-index to 0 or else it appears on back of card
         $('h1').delay(400).queue(function(next) {
             $(this).toggleClass('h1_card-flip-toggles');
@@ -98,17 +101,14 @@ $(document).ready(function() {
             $(this).toggle();
             next();
         });
-        $('#imageSwap').delay(400).queue(function(next) {
-            $(this).toggle();
-            next();
-        });
+        // $('#imageSwap').delay(400).queue(function(next) {
+        //     $(this).toggle();
+        //     next();
+        // });
         $('.content').delay(400).queue(function(next) {
             $(this).toggleClass('card_face_flip_relative_toggle');
             next();
         });
-        if ($('#frontend').css('display') == 'block') {
-            $(this).css('display', 'none');
-        }
     });
     
 });
