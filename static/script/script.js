@@ -82,6 +82,11 @@ $(document).ready(function() {
     
     $('#fullstack-header .down-arrows').hide()
     
+    $('.fa-times').hover(function() {
+        $(this).toggleClass('fal');
+        $(this).toggleClass('fas');
+    });
+    
     $('#contact, .fa-times').click(function() {
         $('#card').toggleClass('is-flipped');
         // change h1's z-index to 0 or else it appears on back of card
