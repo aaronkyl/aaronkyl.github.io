@@ -82,7 +82,7 @@ $(document).ready(function() {
     
     $('#fullstack-header .down-arrows').hide()
     
-    $('.fa-times').hover(function() {
+    $('.fa-paper-plane').hover(function() {
         $(this).toggleClass('fal');
         $(this).toggleClass('fas');
     });
