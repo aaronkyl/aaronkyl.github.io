@@ -106,7 +106,7 @@ $(document).ready(function() {
             $(this).toggleClass('card_face_flip_relative_toggle');
             next();
         });
-        if ($('#fullstack, #frontend, #misc').css('display') == 'block') {
+        if ($('#frontend').css('display') == 'block') {
             $(this).css('display', 'none');
         }
     });
