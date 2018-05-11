@@ -1,5 +1,7 @@
 $(document).ready(function() {
     setAfterImage();
+    $('#fullstack-header .down-arrows').hide()
+    
     $('#fullstack-header').click(function() {
         $('#fullstack').slideToggle('fast')
     });
@@ -48,7 +50,6 @@ $(document).ready(function() {
         $('#misc').slideToggle('fast')
     });
     
-    
     // This is not in the CSS file since the img hover affects elements farther back in
     // the HTML code
     
@@ -80,8 +81,6 @@ $(document).ready(function() {
         $('#edonor h4').css('color', '#EAEAEA')
     });
     
-    $('#fullstack-header .down-arrows').hide()
-    
     $('.fa-paper-plane').hover(function() {
         $(this).toggleClass('fal');
         $(this).toggleClass('fas');
@@ -101,10 +100,6 @@ $(document).ready(function() {
             $(this).toggle();
             next();
         });
-        // $('#imageSwap').delay(400).queue(function(next) {
-        //     $(this).toggle();
-        //     next();
-        // });
         $('.content').delay(400).queue(function(next) {
             $(this).toggleClass('card_face_flip_relative_toggle');
             next();
