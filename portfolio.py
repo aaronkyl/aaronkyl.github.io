@@ -44,7 +44,7 @@ def send_email(sender_name, sender_email, message):
             'Body': {
                 'Text': {
                     'Charset': 'UTF-8',
-                    'Data': "Name: {} \n\n Email: {} \n\n Message: {}".format(sender_name, sender_email, message),
+                    'Data': "Name: {}\n\nEmail: {}\n\nMessage: {}".format(sender_name, sender_email, message),
                 },
             },
             'Subject': {'Charset': 'UTF-8', 'Data': 'Portfolio Contact Message'},
