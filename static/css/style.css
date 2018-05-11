@@ -183,6 +183,9 @@ hr {
     top: -1.5em;
     right: -3em;
     color: #F2F2F2;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     text-align: center;
     width: 10em;
@@ -196,6 +199,7 @@ hr {
 /* FORMATTING FOR DIV FLIP */
 
 body {
+    -webkit-perspective: 5000px;
     perspective: 5000px;
 }
 
@@ -207,6 +211,7 @@ body {
 }
 
 .card_face {
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     position: absolute;
     width: 100%;
@@ -214,10 +219,17 @@ body {
 }
 
 #card_face_back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 #card.is-flipped {
+    -webkit-transform: translateX(-100%) rotateY(180deg);
+    -moz-transform: translateX(-100%) rotateY(180deg);
+    -ms-transform: translateX(-100%) rotateY(180deg);
+    transform: translateX(-100%) rotateY(180deg);
     transform: translateX(-100%) rotateY(180deg);
 }
 
