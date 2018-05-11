@@ -310,10 +310,14 @@ form button {
     border: none;
 }
 
-form button:hover {
-    color: #7d7d7d;
-}
+/*form button:hover {*/
+/*    color: #7d7d7d;*/
+/*}*/
 
 input:focus, textarea:focus, button:focus {
     outline: none;
+}
+
+#preload-plane {
+    visibility: hidden;
 }
