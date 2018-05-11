@@ -278,6 +278,7 @@ form {
     border-radius: 3px;
     padding: .5em;
     box-sizing: border-box;
+    background-color: #FDFDFD;
 }
 
 #name:placeholder, #email:placeholder, #message:placeholder {
