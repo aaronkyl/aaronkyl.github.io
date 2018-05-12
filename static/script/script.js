@@ -2,10 +2,6 @@ $(document).ready(function() {
     setAfterImage();
     $('#fullstack-header .down-arrows').hide()
     
-    $('#fullstack-header').click(function() {
-        $('#fullstack').slideToggle('fast')
-    });
-    
     $('#fullstack-header').hover(
         function() {
             if ($('#fullstack').css('display') == 'none') {
@@ -41,6 +37,10 @@ $(document).ready(function() {
             $('#misc-header .up-arrows, #misc-header .down-arrows').hide()
         }
     );
+        
+    $('#fullstack-header').click(function() {
+        $('#fullstack').slideToggle('fast')
+    });
     
     $('#frontend-header').click(function() {
         $('#frontend').slideToggle('fast')
