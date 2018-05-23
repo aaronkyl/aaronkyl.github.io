@@ -14,15 +14,15 @@ $(document).ready(function() {
         }
     );
     
-    $('#frontend-header').hover(
+    $('#about-header').hover(
         function() {
-            if ($('#frontend').css('display') == 'none') {
-                $('#frontend-header .down-arrows').show()
+            if ($('#about').css('display') == 'none') {
+                $('#about-header .down-arrows').show()
             } else {
-                $('#frontend-header .up-arrows').show()
+                $('#about-header .up-arrows').show()
             }
         }, function() {
-            $('#frontend-header .up-arrows, #frontend-header .down-arrows').hide()
+            $('#about-header .up-arrows, #about-header .down-arrows').hide()
         }
     );
     
@@ -42,8 +42,8 @@ $(document).ready(function() {
         $('#fullstack').slideToggle('fast')
     });
     
-    $('#frontend-header').click(function() {
-        $('#frontend').slideToggle('fast')
+    $('#about-header').click(function() {
+        $('#about').slideToggle('fast')
     });
     
     $('#misc-header').click(function() {
@@ -89,7 +89,7 @@ $(document).ready(function() {
     $('#contact, .fa-times').click(function() {
         $('#card').toggleClass('is-flipped');
         $('#fullstack').hide('fast');
-        $('#frontend').hide('fast');
+        $('#about').hide('fast');
         $('#misc').hide('fast');
         // change h1's z-index to 0 or else it appears on back of card
         $('h1').delay(400).queue(function(next) {
