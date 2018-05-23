@@ -60,6 +60,13 @@ $(document).ready(function() {
         $('#cs50 h4').css('color', '#EAEAEA')
     });
     
+    $('#m4 img, #m4 h4').hover(
+    function() {
+        $('#m4 h4').css('color', '#FFCF0B')
+    }, function() {
+        $('#m4 h4').css('color', '#EAEAEA')
+    });
+    
     $('#blackjack img, #blackjack h4').hover(
     function() {
         $('#blackjack h4').css('color', '#FFCF0B')
