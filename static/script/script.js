@@ -86,7 +86,7 @@ $(document).ready(function() {
         $(this).toggleClass('fas');
     });
     
-    $('#contact, .fa-times').click(function() {
+    $('#contact, .fa-times, #about-contact').click(function() {
         $('#card').toggleClass('is-flipped');
         $('#fullstack').hide('fast');
         $('#about').hide('fast');

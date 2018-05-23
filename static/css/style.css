@@ -116,6 +116,16 @@ h2 {
     min-height: 300px;
 }
 
+#about .project {
+    display: block;
+    text-align: center;
+    min-height: 0;
+}
+
+#about-contact {
+    font-size: 1.1em;
+}
+
 .app-screenshot {
     max-width: 500px;
     margin: 25px;
