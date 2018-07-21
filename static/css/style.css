@@ -122,6 +122,10 @@ h2 {
     min-height: 0;
 }
 
+#about .project p:nth-child(2) {
+    padding-top: 0;
+}
+
 #about-contact {
     font-size: 1.1em;
 }
@@ -130,7 +134,6 @@ h2 {
     margin: auto;
     font-weight: 200;
 }
-
 th {
     text-align: right;
     font-weight: 300;
