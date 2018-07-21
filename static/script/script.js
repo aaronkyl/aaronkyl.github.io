@@ -74,11 +74,11 @@ $(document).ready(function() {
         $('#blackjack h4').css('color', '#EAEAEA')
     });
     
-    $('#weather img, #weather h4').hover(
+    $('#boditraq img, #boditraq h4').hover(
     function() {
-        $('#weather h4').css('color', '#FFCF0B')
+        $('#boditraq h4').css('color', '#FFCF0B')
     }, function() {
-        $('#weather h4').css('color', '#EAEAEA')
+        $('#boditraq h4').css('color', '#EAEAEA')
     });
     
     $('#edonor #imageSwap, #edonor h4').hover(
