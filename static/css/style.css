@@ -126,6 +126,26 @@ h2 {
     font-size: 1.1em;
 }
 
+.skills, table {
+    border: 1px solid red;
+    margin: auto;
+    font-weight: 200;
+}
+
+.skills p {
+    padding-top: 0 !important;
+}
+
+th {
+    text-align: right;
+    font-weight: 300;
+}
+
+td {
+    text-align: left;
+    padding-left: 1em;
+}
+
 .app-screenshot {
     max-width: 500px;
     margin: 25px;
