@@ -32,7 +32,8 @@ class MailHandler(TemplateHandler):
         name = self.get_argument("name")
         email = self.get_argument("email")
         message = self.get_argument("message")
-        send_email(name, email, message)
+        if len(message): 
+            send_email(name, email, message)
         self.render_template("index.html", {})
 
 def send_email(sender_name, sender_email, message):
